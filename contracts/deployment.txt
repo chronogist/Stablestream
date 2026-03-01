@@ -1,0 +1,3 @@
+Stablestream deployed to: 0xa163743e196D2328Ce619F6B911ED24B7F42c824
+Network: Polygon Amoy (chainId: 80002)
+Date: 2024
