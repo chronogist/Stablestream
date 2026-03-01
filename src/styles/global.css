@@ -1,0 +1,66 @@
+:root {
+  --bg-void: #030303;
+  --bg-canvas: #0A0A0A;
+  --bg-surface: #141414;
+  --bg-surface-highlight: #1A1A1A;
+  --bg-card: #1C1C1C;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #888888;
+  --text-tertiary: #444444;
+  
+  --accent-glow: linear-gradient(135deg, #ff2e63 0%, #ff00cc 100%);
+  --accent-color-1: #ff2e63;
+  --accent-color-2: #ff00cc;
+  --accent-gradient: linear-gradient(135deg, #CF8BF3 0%, #F65064 100%);
+  --accent-solid: #F65064;
+  
+  --container-width: 1200px;
+  --radius-sm: 8px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+  
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

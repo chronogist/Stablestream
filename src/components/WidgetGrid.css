@@ -1,0 +1,42 @@
+.widget-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  grid-column: 1;
+}
+
+.mini-card {
+  background: var(--bg-surface);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-card-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mini-card-val {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-main);
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.mini-card-val.accent {
+  color: var(--accent-solid);
+}
+
+@media (max-width: 1024px) {
+  .widget-grid {
+    grid-template-columns: 1fr;
+  }
+}

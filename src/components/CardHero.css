@@ -1,0 +1,94 @@
+.card-hero {
+  background: var(--accent-gradient);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  grid-row: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 60px -15px rgba(246, 80, 100, 0.4);
+  min-height: 520px;
+}
+
+.card-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-tags {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-tag {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-tag.live {
+  background: rgba(246, 80, 100, 0.3);
+}
+
+.vesting-mini-chart {
+  margin: var(--space-xl) 0;
+  height: 140px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.bar.active {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.hero-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-value {
+  font-family: var(--font-main);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.hero-sub {
+  opacity: 0.7;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
