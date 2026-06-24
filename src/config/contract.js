@@ -16,6 +16,7 @@ export const CONTRACT_ABI = [
 ];
 
 // Token addresses and chain choice: see docs/decisions/001-testnet-and-stablecoins.md
+// Fee display rationale (per-second vs per-block): docs/decisions/002-per-second-fee-display.md
 export const TEST_TOKENS = {
   ETH: '0x0000000000000000000000000000000000000000',
   USDC: '0x41E94Eb019C0762f9Bfcf9Fb1E58725BfB0e7582', // Amoy USDC (default stream token)
