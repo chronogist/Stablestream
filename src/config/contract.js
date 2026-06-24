@@ -15,9 +15,10 @@ export const CONTRACT_ABI = [
   'event StreamCancelled(uint256 indexed streamId, address indexed sender, uint256 refundAmount)',
 ];
 
+// Token addresses and chain choice: see docs/decisions/001-testnet-and-stablecoins.md
 export const TEST_TOKENS = {
   ETH: '0x0000000000000000000000000000000000000000',
-  USDC: '0x41E94Eb019C0762f9Bfcf9Fb1E58725BfB0e7582', // Amoy USDC
+  USDC: '0x41E94Eb019C0762f9Bfcf9Fb1E58725BfB0e7582', // Amoy USDC (default stream token)
   DAI: '0xE5504697E323a054Dc83100964D6b2dB04cDE6a7', // Amoy DAI (example)
 };
 
